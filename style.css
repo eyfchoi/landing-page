@@ -268,7 +268,7 @@ div, span, .internal-container {
 .section-content {
     background-color: #1F2937;;    
     flex: auto;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -280,6 +280,9 @@ div, span, .internal-container {
     justify-content: center;
     align-items: center;
     width: 1000px;
+    margin: 20px 0 20px 0; 
+    padding: 20px;
+    border-radius: 20px;
 }
 
 .content-1 {   
