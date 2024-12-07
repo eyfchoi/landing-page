@@ -315,7 +315,7 @@ div, span, .internal-container {
 
 
 
-.overlay {
+/* .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -342,4 +342,4 @@ div, span, .internal-container {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+  } */
