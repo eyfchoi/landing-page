@@ -9,52 +9,113 @@
 </head>
 <body>
     <div id="container">
-        <div id="section-header">
+        <!-- <div id="section-header">
             <span id="header-logo">
-                <strong>Header Logo</strong> 
+                <strong>ECYF</strong> 
             </span>
             <span id="header-link">
                 <p>header link one</p>
                 <p>header link two</p>
                 <p>header link three</p>
             </span>
-        </div>
+        </div> -->
         <div id="section-top">
-            <div id="top-left">
-                <p id="hero-main">This Website is Awesome</p>
-                <p id="hero-secondary">This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast</p>
-                <button>Sign Up</button>
-            </div>
-            <div id="top-right">
+            <div class="section-top-sub">
+                <p class="hero-main">ECYF | Landing Page | WIP, Thank You for Visiting~</p>
+                <p class="hero-secondary">
+                    Software Engineer with 4.5 years of professional experience.<br><br>
+                    Specialized in the development and enhancement of Full Stack Manufacturing Execution Systems (MES) and C# / C++ PC-Based Control Systems (PCBCS).<br><br>              
+                    Experienced in Collaborating with Cross-Functional Teams to Deliver High-Quality and Scalable Solutions to ensure long-term operational excellence.<br><br>  
+                </p>  
+            </div>          
+            <!-- <div id="top-right">
                 <img src="https://cdn.pixabay.com/photo/2024/01/26/08/07/ai-generated-8533603_1280.jpg" alt="Cloud">
-            </div>
+            </div> -->
         </div>
         <div id="section-middle"> 
-            <p>Some Random Information</p>          
+            <p>Work Experience and Personal Projects (Click Below)</p>          
             <div id="middle-container">
                 <div class="middle-child">
-                    <img alt="some image or illustration">
-                    <p>this is some subtext under an illustration or image</p>
+                    <img src="./images/automation.png" alt="MES" 
+                        onclick="    
+                            console.log(document.getElementsByClassName('content-1')[0]);
+                            document.getElementsByClassName('content-1')[0].style.display = 'flex';
+                            document.getElementsByClassName('content-2')[0].style.display = 'none';
+                            document.getElementsByClassName('content-3')[0].style.display = 'none';
+                        "
+                    >
+                    <p>Manufacturing Execution System</p>
                 </div>
                 <div class="middle-child">
-                    <img alt="some image or illustration">
-                    <p>this is some subtext under an illustration or image</p>
+                    <img src="./images/noun-industrial-computer-control-3546835.png" alt="PCBCS"
+                            onclick="    
+                            document.getElementsByClassName('content-1')[0].style.display = 'none';
+                            document.getElementsByClassName('content-2')[0].style.display = 'flex';
+                            document.getElementsByClassName('content-3')[0].style.display = 'none';
+                        "
+                    >
+                    <p>PC Based Control Systems</p>
                 </div>
                 <div class="middle-child">
-                    <img alt="some image or illustration">
-                    <p>this is some subtext under an illustration or image</p>
-                </div>
-                <div class="middle-child">
-                    <img alt="some image or illustration">
-                    <p>this is some subtext under an illustration or image</p>
+                    <img src="./images/ByteTack-logo.png" alt="ByteTack"
+                            onclick="    
+                            document.getElementsByClassName('content-1')[0].style.display = 'none';
+                            document.getElementsByClassName('content-2')[0].style.display = 'none';
+                            document.getElementsByClassName('content-3')[0].style.display = 'flex';
+                        "
+                    >
+                    <p>Simple and Minimalist Task Management Web Application</p>
                 </div>
             </div>
         </div>    
-        <div id="section-quote">
+        <div class="section-content"> 
+            <div class="section-content-inner">
+                <div class="content-1">
+                    <p class="p-flex">
+                        Full Stack Manufacturing Execution System (MES)​<br>
+                        Frontend: CSS,HTML,Javascript | Backend: PHP,MSSQL | Framework: CodeIgniter​<br>
+                    </p>
+                    <ul class="p-flex">
+                        <li>Key contributor to the development of a MES that processes real-time OEE data from production machines to streamline production operations.​</li>             
+                        <li>Optimized the Web Dashboard UI for machine OEE tracking, enabling production team to efficiently pinpoint and address slowdowns, improving operational performance by 30%.​</li>
+                        <li>Designed automated reporting tools to compile and analyze OEE trends, boosting the production team's data processing efficiency by 70% and providing management team with detailed, on-demand high-level reports.​</li>
+                        <li>Sole developer of an Inventory Management WebApp that automated item requests, approval workflows, and notification processes, boosting warehouse operational efficiency by 80% through optimized workflows.​</li>
+                        <li>Work closely with the team to continuously monitor frontend and backend MSSQL Server performance, ensuring 100% uptime and proactively mitigating performance spikes for smooth and undisrupted operations.​</li>
+                        <li>Collaborate with global cross-functional teams to gather requirements, align systems with operational needs, and drive continuous improvement through feedback performance optimization to achieve business goals.</li>                            
+                    </ul>                                  
+                </div>
+                <div class="content-2">
+                    <p class="p-flex">
+                        C++ / C# PC-Based Control Systems (PCBCS)​
+                    </p>
+                    <ul class="p-flex">
+                        <li>Ensure undisrupted operations of PCBCS machines by providing high-quality solutions on demand to achieve daily output and OEE targets.​</li>             
+                        <li>Successfully migrated Legacy Codebase from C++ to C# and implemented modern frameworks to ensure scalability with evolving technological needs.​</li>
+                        <li>Spearheaded new MVVM Codebase system architecture, decoupling UI/UX and backend logic. Provide APIs and Toolkits to improve development efficiency, reducing new development time by 60% and deployment time by 80%.​</li>
+                    </ul>       
+                </div>
+                <div class="content-3">
+                    <p class="p-flex">
+                        Bytetack<br>
+                        https://eyfchoi.github.io/go-bytetack/<br>
+                        Simple and Minimalist Task Management Web Application, powered by a MERN Stack. Key features under development:​<br>
+                    </p>
+                    <ul class="p-flex">
+                        <li>Key contributor to the development of a MES that processes real-time OEE data from production machines to streamline production operations.​</li>             
+                        <li>Optimized the Web Dashboard UI for machine OEE tracking, enabling production team to efficiently pinpoint and address slowdowns, improving operational performance by 30%.​</li>
+                        <li>Designed automated reporting tools to compile and analyze OEE trends, boosting the production team's data processing efficiency by 70% and providing management team with detailed, on-demand high-level reports.​</li>
+                        <li>Sole developer of an Inventory Management WebApp that automated item requests, approval workflows, and notification processes, boosting warehouse operational efficiency by 80% through optimized workflows.​</li>
+                        <li>Work closely with the team to continuously monitor frontend and backend MSSQL Server performance, ensuring 100% uptime and proactively mitigating performance spikes for smooth and undisrupted operations.​</li>
+                        <li>Collaborate with global cross-functional teams to gather requirements, align systems with operational needs, and drive continuous improvement through feedback performance optimization to achieve business goals.</li>                            
+                    </ul>       
+                </div>
+            </div>     
+        </div>
+        <!-- <div id="section-quote">
             <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
             <p>-Thor, God of Thunder</p>
-        </div>
-        <div id="section-bottom">   
+        </div> -->
+        <!-- <div id="section-bottom">   
             <div id="bottom-container">
                 <div>
                     <p>Call to action! It's time!</p>
@@ -62,9 +123,9 @@
                 </div>
                 <button>Sign up</button>
             </div>        
-        </div>    
+        </div>     -->
         <div id="section-footer">     
-            <p>Copyright The © Odin Project 2021</p>      
+            <p>Copyright © ECYF 2024</p>      
         </div>    
     </div>
 </body>
