@@ -9,19 +9,11 @@
 </head>
 <body>
     <div id="container">
-        <!-- <div id="section-header">
-            <span id="header-logo">
-                <strong>ECYF</strong> 
-            </span>
-            <span id="header-link">
-                <p>header link one</p>
-                <p>header link two</p>
-                <p>header link three</p>
-            </span>
-        </div> -->
-        <div id="section-top">
-            <div class="section-top-sub">
-                <p class="hero-main">ECYF | Landing Page | Mobile Support is under Development, More Content incoming! Thank You for Visiting~</p>
+        <div id="section-header">
+            <p class="hero-main">ECYF | Landing Page | Mobile Support is under Development. Thank You for Visiting~</p>
+        </div>
+        <div id="section-top">         
+            <div class="section-top-sub">              
                 <p class="hero-secondary">
                     Software Engineer with 4.5 years of professional experience.<br><br>
                     Specialized in the development and enhancement of Full Stack Manufacturing Execution Systems (MES) and C# / C++ PC-Based Control Systems (PCBCS).<br><br>              
@@ -66,7 +58,7 @@
                             document.getElementsByClassName('content-3')[0].style.display = 'flex';
                         "
                     >
-                    <p>Simple and Minimalist Task Management Web Application</p>
+                    <p>Task Management WebApp</p>
                 </div>
             </div>
         </div>    
@@ -74,58 +66,144 @@
             <div class="section-content-inner">
                 <div class="content-1">
                     <p class="p-flex">
-                        <strong>Stack Manufacturing Execution System (MES)</strong>​<br>
-                        Frontend: CSS,HTML,Javascript | Backend: PHP,MSSQL | Framework: CodeIgniter​<br>
+                        <strong>Stack Manufacturing Execution System (MES)</strong><br>
+                        Frontend: CSS,HTML,Javascript | Backend: PHP,MSSQL | Framework: CodeIgniter<br>
                     </p>
-                    <ul class="p-flex">
-                        <li>Key contributor to the development of a MES that processes real-time OEE data from production machines to streamline production operations.​</li>             
-                        <li>Optimized the Web Dashboard UI for machine OEE tracking, enabling production team to efficiently pinpoint and address slowdowns, improving operational performance by 30%.​</li>
-                        <li>Designed automated reporting tools to compile and analyze OEE trends, boosting the production team's data processing efficiency by 70% and providing management team with detailed, on-demand high-level reports.​</li>
-                        <li>Sole developer of an Inventory Management WebApp that automated item requests, approval workflows, and notification processes, boosting warehouse operational efficiency by 80% through optimized workflows.​</li>
+                    <ol class="p-flex">
+                        <li>Key contributor to the development of a MES that processes real-time OEE data from production machines to streamline production operations.                        </li> 
+                        <br>    
+                        <li>Optimized Web Dashboard UI for machine OEE tracking, enabling production team to efficiently pinpoint and address slowdowns, <strong>improving operational performance by 30%</strong>.
+                            <ul>
+                                <li>Dashboard layout consist of elements displaying real-time status and summarized OEE data for production machines.</li>
+                                <li>Contents refreshes periodically, cycling through data for more than 100 machines to provide a dynamic, up-to-date overview of production performance.</li>
+                                <li>Frontend Optimization
+                                    <ul>
+                                        <li>Collaborative effort to Enhance Dashboard layouts by refining HTML, CSS, and Flexbox implementations, accommodating more data elements while maintaining readability.</li>
+                                        <li>Modified CSS Box Model and Visual Style Properties to maximize content within elements and improve UI aesthetics.</li>              
+                                    </ul>
+                                </li>
+                                <li>Backend Optimization
+                                    <ul>
+                                        <li>Refine data flow between the SQL database, PHP models, and PHP controllers by improving data handling algorithms for PHP arrays.</li>
+                                        <li>Achieved a 20% second higher refresh rate, improving dashboard responsiveness.</li>
+                                    </ul>
+                                </li>
+                                <li>Optimizations resulted in <strong>Enhanced data visualization of OEE metrics</strong> and <strong>Reduced the time spent on data monitoring by 20%</strong>, accelerating fire-fighting and decision-making efforts.</li>
+                            </ul>
+                        </li>
+                        <br>   
+                        <li>Designed automated reporting tools to compile and analyze OEE trends, <strong>boosting the production team's data processing efficiency by 70%</strong> and providing teams with detailed, on-demand high-level reports.
+                            <ul>
+                                <li>OEE Report Automation
+                                    <ul>
+                                        <li>Automated generation of customized OEE reports tailored to the specific needs of various cross-functional teams</li>
+                                        <li>Integrated OEE analytics tools and interactive visual graphs to present trends, empowering the teams with the insights needed to make data-driven decisions.</li>
+                                        <li>Responsive and easy to interpret visualizations allowed users to quickly analyze production performance without the need for extensive data analysis.</li>
+                                    </ul>
+                                </li>
+                                <li>Product History Tracking Reports
+                                    <ul>
+                                        <li>During Production runs, each product are assigned a unique identifier, allowing the system to track and record its movement across various machines and processes.</li>
+                                        <li>Collaborated with team to develop various reports and visualizations as products moved through different stages of the production process. </li>
+                                        <li>Enabled production team to assess product quality, identify process bottlenecks, and optimize machine usage on the fly</li>
+                                    </ul>
+                                </li>
+                                <li> Reporting tools has brought overall benefits for entire team:
+                                    <ul>
+                                        <li>Automation of complex reports significantly reduced the need for repetitive manual SQL queries to process large datasets, freeing teams from time-consuming and error-prone SQL querying  tasks.</li>
+                                        <li>Provided management teams with high-level reports that were readily accessible, allowing for more informed daily follow-ups and quicker strategic decision-making.</li>
+                                        <li>Achieved <strong>70% increase in reporting efficiency for the teams</strong>, enabling more agile responses to operational challenges and improved production planning.</li>
+                                    </ul>
+                                </li>  
+                            </ul>
+                        </li>
+                        <br>   
+                        <li>
+                            Sole developer of an Inventory Management WebApp that automated item requests, approval workflows, and notification processes, boosting warehouse operational efficiency by 80% through optimized workflows.​
+                            <ul>
+                                <li>Automated Item Request and Inventory Tracking features
+                                    <ul>
+                                        <li>Developed an intuitive and user-friendly interface for end-users to easily submit requests for to acquire items from warehouse inventory.</li>
+                                        <li>Implemented an automated inventory tracking in real-time, triggering notifications to warehouse team for items low / out of stock.</li>
+                                        <li>The feature ensured that the warehouse team had the right items available when needed, preventing delays in item delivery to requesters.</li>
+                                    </ul>
+                                </li>
+                                <li>Streamlined Approval Workflow
+                                    <ul>
+                                        <li>Designed approval workflow system, automatically routing requests through the designated approvers based on predefined rules (e.g Department, Approval hierarchy, Item categories).</li>
+                                        <li>Implemented role-based access control, ensuring only authorized personnel could approve or deny requests, improving security within item transactions.</li>
+                                    </ul>
+                                </li>
+                                <li>Dashboard and Auto-Notification Triggers
+                                    <ul>
+                                        <li>Comprehensive notification system which keeps all approvers and stakeholders informed of key events such as request submissions, approval status updates, and inventory replenishments.</li>
+                                        <li>Notifications were sent through various channels, including email and in-app alerts, ensuring all users were promptly informed about important actions and changes.</li>
+                                        <li>Eliminate bottlenecks by reducing the time spent manually tracking request statuses, speeding up the decision-making process and reducing the need for manual follow-ups</li>
+                                    </ul>
+                                </li>
+                                <li>Overall Impact to Warehouse workflow
+                                    <ul>
+                                        <li><strong>80% improvement in warehouse operational efficiency</strong> through the automation of key inventory management processes.</li>
+                                        <li>Significant reduction in manual errors and delays in request approvals, improving overall accuracy and response time.</li>
+                                        <li>Increased productivity for the warehouse team, diverting focus to higher-value tasks</li>
+                                    </ul>
+                                </li>
+                            </ul>      
+                        </li>
+                        <br>   
                         <li>Work closely with the team to continuously monitor frontend and backend MSSQL Server performance, ensuring 100% uptime and proactively mitigating performance spikes for smooth and undisrupted operations.​</li>
-                        <li>Collaborate with global cross-functional teams to gather requirements, align systems with operational needs, and drive continuous improvement through feedback performance optimization to achieve business goals.</li>                            
-                    </ul>                                  
+                             <ul>
+                                <li>Collaborative effort to monitor and optimize both frontend and backend performance, with a strong focus on MSSQL Server performance to ensure uninterrupted operations.</li>
+                                <li>Performance Monitoring and Optimization
+                                    <ul>
+                                        <li>Ensure seamless interaction between frontend and backend, identifying areas where algorithms could be optimized for improved data transfer performance.</li>
+                                        <li>Implemented asynchronous data loading strategies via AJAX for frontend components with heavy dependencies on large data samples to minimize bottlenecks experienced by end users.</li>
+                                        <li>Worked with the team to establish redundant systems, including database backups and replication strategies, ensuring the availability of critical data during SQL Server outages or maintenance periods.</li>
+                                        <li>Proactively reviewed server logs and conducted routine health checks to preemptively detect and resolve potential performance issues, reducing repercussions on system uptime.</li>                              
+                                    </ul>
+                                </li>
+                                <li><strong>100% system uptime</strong> achieved through continuous performance monitoring and optimization efforts.</li>  
+                            </ul>
+                        </li>    
+                        <br>                     
+                        <li>Collaborate with global cross-functional teams to gather requirements, align systems with operational needs, and drive continuous improvement through feedback performance optimization to achieve business goals.
+                            <ul>
+                                <li>Collaborate with stakeholders across various departments (e.g. production, management) to gather and understand business requirements and operational challenges.</li>
+                                <li>Enhance user-facing features (such as intuitive interfaces and real-time data access) and backend operations (like database performance and process automation) for holistic positive impacts in business processes.</li>
+                                <li>Drive continuous feedback and improvement loops, improving overall user experience.</li>
+                            </ul>
+                        </li>                            
+                    </ol>                                  
                 </div>
                 <div class="content-2">
                     <p class="p-flex">
-                        <strong>PC-Based Control Systems (PCBCS)​</strong><br>
+                        <cite class="red-note">*Development in progress~</cite><br>
+                        <strong>PC-Based Control Systems (PCBCS)</strong><br>
                         Technologies: C#, C++
                     </p>
                     <ul class="p-flex">
-                        <li>Ensure undisrupted operations of PCBCS machines by providing high-quality solutions on demand to achieve daily output and OEE targets.​</li>             
-                        <li>Successfully migrated Legacy Codebase from C++ to C# and implemented modern frameworks to ensure scalability with evolving technological needs.​</li>
-                        <li>Spearheaded new MVVM Codebase system architecture, decoupling UI/UX and backend logic. Provide APIs and Toolkits to improve development efficiency, reducing new development time by 60% and deployment time by 80%.​</li>
+                        <li>Ensure undisrupted operations of PCBCS machines by providing high-quality solutions on demand to achieve daily output and OEE targets.</li>             
+                        <li>Successfully migrated Legacy Codebase from C++ to C# and implemented modern frameworks to ensure scalability with evolving technological needs.</li>
+                        <li>Spearheaded new MVVM Codebase system architecture, decoupling UI/UX and backend logic. Provide APIs and Toolkits to improve development efficiency, reducing new development time by 60% and deployment time by 80%.</li>
                     </ul>       
                 </div>
-                <div class="content-3">
+                <div class="content-3">                   
                     <p class="p-flex">
+                        <cite class="red-note">*Development in progress~</cite><br>
                         <strong>Bytetack - Minimalist Task Management Web Application</strong><br>
                         <cite>https://eyfchoi.github.io/go-bytetack/</cite><br>
                         Technologies: MERN Stack
                     </p>
                     <ul class="p-flex">
-                        <li>Parent-Child Task Nodes: Hierarchical task structure for improved organization and task dependency management.​</li>             
-                        <li>Time-Tracking Capabilities: Built-in time tracking for task management and productivity monitoring.​</li>
-                        <li>Interactive Chatbot Assistant: AI-driven assistant to provide real-time task updates, reminders, and productivity tips.​</li>
+                        <li>Parent-Child Task Nodes: Hierarchical task structure for improved organization and task dependency management.</li>             
+                        <li>Time-Tracking Capabilities: Built-in time tracking for task management and productivity monitoring.</li>
+                        <li>Interactive Chatbot Assistant: AI-driven assistant to provide real-time task updates, reminders, and productivity tips.</li>
                      </ul>       
                 </div>
             </div>     
         </div>
-        <!-- <div id="section-quote">
-            <p>This is an inspiring quote, or a testimonial from a customer. Maybe it's just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.</p>
-            <p>-Thor, God of Thunder</p>
-        </div> -->
-        <!-- <div id="section-bottom">   
-            <div id="bottom-container">
-                <div>
-                    <p>Call to action! It's time!</p>
-                    <p>Sign up for our product by clicking that button right over there!</p>
-                </div>
-                <button>Sign up</button>
-            </div>        
-        </div>     -->
         <div id="section-footer">     
-            <p>Copyright © ECYF 2024</p>      
+            <p>Copyright © ECYF 2024 | v1.0.0.5</p>      
         </div>    
     </div>
 </body>
