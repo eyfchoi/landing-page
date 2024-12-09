@@ -316,6 +316,7 @@ div, span, .internal-container {
 
 .p-flex {
     flex: auto;
+    margin-bottom: 0;
 }
 
 ol li, ol ul {
