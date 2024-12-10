@@ -9,62 +9,58 @@
 </head>
 <body>
     <div id="container">
-        <div id="section-header">
+        <div id="header-container">
             <p class="hero-main">ECYF | Landing Page | Mobile Support is under Development. Thank You for Visiting~</p>
         </div>
-        <div id="section-top">         
-            <div class="section-top-sub">              
+        <div id="top-container">         
+            <div id="top-content">              
                 <p class="hero-secondary">
                     Software Engineer with 4.5 years of professional experience.<br><br>
                     Specialized in the development and enhancement of Full Stack Manufacturing Execution Systems (MES) and C# / C++ PC-Based Control Systems (PCBCS).<br><br>              
                     Experienced in Collaborating with Cross-Functional Teams to Deliver High-Quality and Scalable Solutions to ensure long-term operational excellence.<br><br>  
                 </p>  
             </div>          
-            <!-- <div id="top-right">
-                <img src="https://cdn.pixabay.com/photo/2024/01/26/08/07/ai-generated-8533603_1280.jpg" alt="Cloud">
-            </div> -->
         </div>
-        <div id="section-middle"> 
+        <div id="middle-container"> 
             <p>Work Experience and Personal Projects (Click Below)</p>          
-            <div id="middle-container">
-                <div class="middle-child">
+            <div id="middle-content">
+                <div class="middle-content-child">
                     <img src="./images/automation.png" alt="MES" 
                         onclick="    
-                            console.log(document.getElementsByClassName('content-1')[0]);
-                            document.getElementsByClassName('content-1')[0].style.display = 'flex';
-                            document.getElementsByClassName('content-2')[0].style.display = 'none';
-                            document.getElementsByClassName('content-3')[0].style.display = 'none';
+                            document.getElementById('description-mes').style.display = 'flex';
+                            document.getElementById('description-pcbcs').style.display = 'none';
+                            document.getElementById('description-bytetack').style.display = 'none';
                         "
                     >
                     <!-- <a href="https://www.flaticon.com/free-icons/mes" title="mes icons">Mes icons created by Alla Afanasenko - Flaticon</a> -->
                     <p>Manufacturing Execution System</p>
                 </div>
-                <div class="middle-child">
+                <div class="middle-content-child">
                     <img src="./images/noun-industrial-computer-control-3546835.png" alt="PCBCS"
                             onclick="    
-                            document.getElementsByClassName('content-1')[0].style.display = 'none';
-                            document.getElementsByClassName('content-2')[0].style.display = 'flex';
-                            document.getElementsByClassName('content-3')[0].style.display = 'none';
+                            document.getElementById('description-mes').style.display = 'none';
+                            document.getElementById('description-pcbcs').style.display = 'flex';
+                            document.getElementById('description-bytetack').style.display = 'none';
                         "
                     >
                     <!-- <a href="https://thenounproject.com/browse/icons/term/industrial-computer-control/" target="_blank" title="industrial computer control Icons">industrial computer control by Erwin Smith from Noun Project</a> -->
                     <p>PC Based Control Systems</p>
                 </div>
-                <div class="middle-child">
+                <div class="middle-content-child">
                     <img src="./images/ByteTack-logo.png" alt="ByteTack"
                             onclick="    
-                            document.getElementsByClassName('content-1')[0].style.display = 'none';
-                            document.getElementsByClassName('content-2')[0].style.display = 'none';
-                            document.getElementsByClassName('content-3')[0].style.display = 'flex';
+                            document.getElementById('description-mes').style.display = 'none';
+                            document.getElementById('description-pcbcs').style.display = 'none';
+                            document.getElementById('description-bytetack').style.display = 'flex';
                         "
                     >
                     <p>Task Management WebApp</p>
                 </div>
             </div>
         </div>    
-        <div class="section-content"> 
-            <div class="section-content-inner">
-                <div class="content-1">
+        <div id="description-container"> 
+            <div class="description-container-child">
+                <div id="description-mes">
                     <p class="p-flex">
                         <strong>Stack Manufacturing Execution System (MES)</strong><br>
                         Frontend: CSS,HTML,Javascript | Backend: PHP,MSSQL | Framework: CodeIgniter<br>
@@ -175,7 +171,7 @@
                         </li>                            
                     </ol>                                  
                 </div>
-                <div class="content-2">
+                <div id="description-pcbcs">
                     <p class="p-flex">
                         <strong>PC-Based Control Systems (PCBCS)</strong><br>
                         Technologies: C#, C++
@@ -189,7 +185,7 @@
                         <li>Revamped the frontend Human-Machine Interface (HMI) by introducing WPF, leveraging cutting-edge UI/UX tools to <strong>significantly enhance user-friendliness, aesthetics, and performance.</strong>​</li>
                     </ul>       
                 </div>
-                <div class="content-3">                   
+                <div id="description-bytetack">                   
                     <p class="p-flex">
                         <strong>Bytetack - Minimalist Task Management Web Application</strong><br>
                         <cite>https://eyfchoi.github.io/go-bytetack/</cite><br>
@@ -208,8 +204,8 @@
                 </div>
             </div>     
         </div>
-        <div id="section-footer">     
-            <p>Copyright © ECYF 2024 | v1.0.0.6</p>      
+        <div id="footer-container">     
+            <p>Copyright © ECYF 2024 | v1.0.0.7</p>      
         </div>    
     </div>
 </body>
