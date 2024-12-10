@@ -2,3 +2,18 @@
     font-family: 'Roboto';
     /*border: red solid 0.5px; /*For visualization*/
 }
+
+
+
+
+.theme-header-footer {
+    background-color: #212529;
+}
+
+.theme-section-1 {
+    background-color: #6c757d;
+}
+
+.theme-section-2 {
+    background-color: #e9ecef;
+}
