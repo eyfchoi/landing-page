@@ -3,6 +3,10 @@
     /*border: red solid 0.5px; /*For visualization*/
 }
 
+body {
+    padding-top: 55px; /* Adjust padding to avoid content under the navbar */
+}
+
 .hover-effect:hover {
     opacity: 0.50;
 }
